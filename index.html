@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Personal Website - Welcome!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/de586412f8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <i class="fa-solid fa-circle-arrow-up" id="top-button" style="display: none;" onclick="topFunction()"></i>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#" id="a-logo">
+                        <h1 id="h1-logo">
+                            <p id="first-letter-logo">D</p>website
+                        </h1>
+                    </a>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Welcome!</p>
+                <h1>Hi, I'm <span>Daniel</span> <br> Malurica <span id="typed"><span></h1>
+            </div>
+
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1"><img id="my-photo" src="images/me.jpg" alt="A photo of me"></div>
+                        <div class="abount-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>Description bla bla bla bla bla bla</p>
+                            <div class="tab-titles">
+                                <div class="tab-links active-link" onclick="openTab('skills')">Skills</div>
+                                <div class="tab-links" onclick="openTab('experience')">Experience</div>
+                                <div class="tab-links" onclick="openTab('education')">Education</div>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Development</span><br> Web app development</li>
+                                    <li><span>Mobile Development</span><br> Building Android apps</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Udemy</span><br> Web app development</li>
+                                    <li><span>LinkedIn</span><br> Building Android apps</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Matematica-Informatica</span><br>Liceul Teoretic "Ion Mihalache"</li>
+                                    <li><span>Informatica-Economica</span><br> Academia de Studii Economice Bucuresti
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Web Development</h2>
+                            <p>dwadadwadawdada</p>
+                            <a href="#">Learn more</a>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-mobile"></i>
+                            <h2>Mobile Development</h2>
+                            <p>dwadadwadawdada</p>
+                            <a href="#">Learn more</a>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <h2>And Others</h2>
+                            <p>dwadadwadawdada</p>
+                            <a href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="portfolio">
+                <div class="container">
+                    <h1 class="sub-title">My Work</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="./images/work-1.png" alt="Image of working">
+                            <div class="layer">
+                                <h3>Social Media App</h3>
+                                <p>The app connects you to the talented people around the world. Download it from Play
+                                    Store</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="./images/work-2.png" alt="Image of working">
+                            <div class="layer">
+                                <h3>Music App</h3>
+                                <p>The app connects you to the talented people around the world. Download it from Play
+                                    Store</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="./images/work-3.png" alt="Image of working">
+                            <div class="layer">
+                                <h3>Online Store App</h3>
+                                <p>The app connects you to the talented people around the world. Download it from Play
+                                    Store</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="see-more">
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact-me">
+                <div class="container">
+                    <div class="my-info">
+                        <h1>Contact Me</h1>
+                        <p><i class="fa-regular fa-envelope"></i>danielmalurica@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0730.204.500</p>
+                        <div class="social-media">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="download-cv">
+                            <a href="#">Download CV</a>
+                        </div>
+                    </div>
+                    <div class="message-me">
+                        <form>
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn-submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © Daniel Malurica. Made with <i class="fa-solid fa-heart"></i> by Youtube Tutorials</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
