@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/de586412f8.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
 </head>
 
 <body>
@@ -37,8 +38,7 @@
             </nav>
 
             <div class="header-text">
-                <p>Welcome!</p>
-                <h1>Hi, I'm <span>Daniel</span> <br> Malurica <span id="typed"><span></h1>
+                <h1>Hi, I'm <span>Daniel <br> Malurica</span> <span id="typed"><span></h1>
             </div>
 
             <div id="about">
@@ -47,30 +47,58 @@
                         <div class="about-col-1"><img id="my-photo" src="images/me.jpg" alt="A photo of me"></div>
                         <div class="abount-col-2">
                             <h1 class="sub-title">About Me</h1>
-                            <p>Description bla bla bla bla bla bla</p>
+                            <p class="description">Hello! My name is Daniel. I'm a passionate Front-End and Application
+                                Mobile Developer
+                                from Romania. I love driving, walking and coding. You can discover more about me below!
+                            </p>
                             <div class="tab-titles">
                                 <div class="tab-links active-link" onclick="openTab('skills')">Skills</div>
                                 <div class="tab-links" onclick="openTab('experience')">Experience</div>
                                 <div class="tab-links" onclick="openTab('education')">Education</div>
                             </div>
                             <div class="tab-contents active-tab" id="skills">
-                                <ul>
-                                    <li><span>Web Development</span><br> Web app development</li>
-                                    <li><span>Mobile Development</span><br> Building Android apps</li>
-                                </ul>
+
+                                <div class="table-container">
+                                    <table id="animations-example-2"
+                                        class="charts-css bar hide-data show-labels data-spacing-5 show-primary-axis">
+                                        <caption> My Skills
+                                        </caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"> Skill </th>
+                                                <th scope="col"> Progress </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text" scope="row"> Web Dev </th>
+                                                <td style="--size:calc( 70 / 100 );"><span class="data"> 70%
+                                                    </span></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text" scope="row"> Mobile Dev </th>
+                                                <td style="--size:calc( 60 / 100 );"><span class="data"> 60% </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
 
                             <div class="tab-contents" id="experience">
                                 <ul>
-                                    <li><span>Udemy</span><br> Web app development</li>
-                                    <li><span>LinkedIn</span><br> Building Android apps</li>
+                                    <li><span>Actual Job - Technical
+                                            representative</span><br> Software Distribution Group (February 2021 -
+                                        Present) </li>
                                 </ul>
                             </div>
 
                             <div class="tab-contents" id="education">
                                 <ul>
-                                    <li><span>Matematica-Informatica</span><br>Liceul Teoretic "Ion Mihalache"</li>
-                                    <li><span>Informatica-Economica</span><br> Academia de Studii Economice Bucuresti
+                                    <li><span>Math-Informatics</span><br>Highschool - "Ion Mihalache", Topoloveni</li>
+                                    <li><span>Economic Informatics</span><br> ASE Bucharest - Cybernetics Statistics and
+                                        Economic Informatics
                                     </li>
                                 </ul>
                             </div>
@@ -81,27 +109,36 @@
 
             <div id="services">
                 <div class="container">
-                    <h1 class="sub-title">My Services</h1>
+                    <h1 class="sub-title">Technologies</h1>
                     <div class="services-list">
                         <div>
                             <i class="fa-solid fa-code"></i>
-                            <h2>Web Development</h2>
-                            <p>dwadadwadawdada</p>
-                            <a href="#">Learn more</a>
+                            <h2>Front-End</h2>
+                            <ul class="tech-list">
+                                <li>HTML/CSS</li>
+                                <li>Javascript</li>
+                                <li>Sass/Bootstrap</li>
+                                <li>React JS</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-database"></i>
+                            <h2>Backend and Databases</h2>
+                            <ul class="tech-list">
+                                <li>Firebase</li>
+                                <li>MongoDB</li>
+                                <li>Node JS</li>
+                            </ul>
                         </div>
 
                         <div>
                             <i class="fa-solid fa-mobile"></i>
-                            <h2>Mobile Development</h2>
-                            <p>dwadadwadawdada</p>
-                            <a href="#">Learn more</a>
-                        </div>
-
-                        <div>
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <h2>And Others</h2>
-                            <p>dwadadwadawdada</p>
-                            <a href="#">Learn more</a>
+                            <h2>Mobile</h2>
+                            <ul class="tech-list">
+                                <li>Java</li>
+                                <li>React Native</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -112,12 +149,13 @@
                     <h1 class="sub-title">My Work</h1>
                     <div class="work-list">
                         <div class="work">
-                            <img src="./images/work-1.png" alt="Image of working">
+                            <img src="./images/shopping.jpg" alt="Image of shopping">
                             <div class="layer">
-                                <h3>Social Media App</h3>
-                                <p>The app connects you to the talented people around the world. Download it from Play
-                                    Store</p>
-                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <h3>Shop Web App</h3>
+                                <p>An online shopping application created using React JS, Redux and SASS.</p>
+                                <p>Click here to see it</p>
+                                <a href="https://mlrkshop.netlify.app/" target="_blank"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
                         <div class="work">
@@ -140,7 +178,7 @@
                         </div>
                     </div>
                     <div class="see-more">
-                        <a href="#">See more</a>
+                        <a href="https://github.com/danielmalurica" target="_blank">See more</a>
                     </div>
                 </div>
             </div>
@@ -152,12 +190,17 @@
                         <p><i class="fa-regular fa-envelope"></i>danielmalurica@gmail.com</p>
                         <p><i class="fa-solid fa-phone"></i>0730.204.500</p>
                         <div class="social-media">
-                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/dani.malurica/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/dani.malurica/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/daniel-george-m%C4%83luric%C4%83-6632aa163/"
+                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/danielmalurica" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
                         </div>
                         <div class="download-cv">
-                            <a href="#">Download CV</a>
+                            <a href="./cv/test.pdf" download>Download CV</a>
                         </div>
                     </div>
                     <div class="message-me">
@@ -172,7 +215,7 @@
             </div>
 
             <div class="copyright">
-                <p>Copyright © Daniel Malurica. Made with <i class="fa-solid fa-heart"></i> by Youtube Tutorials</p>
+                <p>Copyright © Daniel Malurica 2023.</p>
             </div>
         </div>
     </div>

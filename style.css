@@ -91,6 +91,10 @@ svg {
     font-size: 2rem;
 }
 
+.description {
+    text-align: justify;
+}
+
 
 .header-text h1 {
     margin-top: 20px;
@@ -132,7 +136,7 @@ svg {
 
 .tab-titles {
     display: flex;
-    margin: 20px 0 40px;
+    margin: 30px 0 40px;
 }
 
 .tab-links {
@@ -141,6 +145,7 @@ svg {
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: #fff;
 }
 
 .tab-links::after {
@@ -210,6 +215,15 @@ svg {
     display: inline-block;
 }
 
+.tech-list {
+    margin: 15px;
+}
+
+.tech-list li{
+    padding: 5px;
+    font-size: 16px;
+}
+
 .services-list div:hover {
     background: #eb4a4c;
     transform: translateY(-10px);
@@ -261,6 +275,11 @@ svg {
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.layer p {
+    margin-top: 20px;
 }
 
 .layer a{
@@ -399,6 +418,46 @@ form input, form textarea {
     color: #ff004f;
     font-size: 32px;
 }
+
+.table-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    margin: 0;
+  }
+
+  #animations-example-2 {
+    height: 60px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  #animations-example-2 tbody {
+    overflow-y: hidden; 
+  }
+  #animations-example-2 tbody th {
+    z-index: 1;
+  }
+  #animations-example-2 tbody td {
+    animation: moving-bars 15s;
+  }
+  @keyframes moving-bars {
+    0%  { transform: translateY( 100% ); }
+    15% { transform: translateY( 0 ); }
+  }
+  
+  
+  #bar-example-1 {
+    height: 200px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .text {
+    font-size: 14px;
+    font-weight: 300;
+  }
 
 @media only screen and (max-width:600px) {
     .header-text {
